@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>欢迎来到61的世界</title>
+  <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+  <main class="site-shell">
+    <section class="hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Hello 61</p>
+        <h1>欢迎来到61的世界</h1>
+        <p class="subtitle">关于61的小小宇宙</p>
+        <p class="description">
+          61是一名多伦多大学大三学生，专业是经济和心理学。她喜欢观察人的行为、情绪和选择，也喜欢用温柔又有趣的方式记录自己的生活。
+        </p>
+      </div>
+      <div class="photo-card">
+        <img src="images/image61.jpg" alt="61的照片">
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Profile</p>
+        <h2>基本信息</h2>
+      </div>
+      <div class="info-grid">
+        <article class="info-card"><span>🎂</span><strong>年龄</strong><p>20岁</p></article>
+        <article class="info-card"><span>🌙</span><strong>生日</strong><p>7月5日</p></article>
+        <article class="info-card"><span>🎓</span><strong>学校</strong><p>多伦多大学</p></article>
+        <article class="info-card"><span>📚</span><strong>年级</strong><p>大三</p></article>
+        <article class="info-card"><span>💭</span><strong>专业</strong><p>经济学和心理学</p></article>
+        <article class="info-card"><span>🐱</span><strong>喜欢的动物</strong><p>小猫</p></article>
+        <article class="info-card"><span>💜</span><strong>喜欢的颜色</strong><p>紫色</p></article>
+        <article class="info-card"><span>✨</span><strong>喜欢的数字</strong><p>27 和 11</p></article>
+        <article class="info-card"><span>🏸</span><strong>喜欢的运动</strong><p>羽毛球</p></article>
+        <article class="info-card"><span>🎵</span><strong>喜欢的乐器</strong><p>吉他和钢琴</p></article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Interests</p>
+        <h2>兴趣展示区</h2>
+      </div>
+      <div class="interest-grid">
+        <button class="interest-card cat-card" type="button" aria-label="查看小猫宝蓝照片">🐱<span>小猫「宝蓝」</span></button>
+        <article class="interest-card">💜<span>紫色</span></article>
+        <article class="interest-card">🏸<span>羽毛球</span></article>
+        <article class="interest-card">🎸<span>吉他</span></article>
+        <article class="interest-card">🎹<span>钢琴</span></article>
+        <article class="interest-card">📈<span>经济学</span></article>
+        <article class="interest-card">🧠<span>心理学</span></article>
+      </div>
+    </section>
+
+    <section class="section-block photo-wall">
+      <div class="section-heading">
+        <p class="eyebrow">Gallery</p>
+        <h2>61的照片墙</h2>
+      </div>
+      <div class="gallery-carousel" aria-label="61的照片轮播">
+        <button class="carousel-button prev-button" type="button" aria-label="上一张照片">‹</button>
+        <figure class="gallery-card">
+          <img id="galleryImage" src="images/gallery/image1.jpg" alt="61的照片墙照片 1">
+          <figcaption id="galleryCaption">1 / 6</figcaption>
+        </figure>
+        <button class="carousel-button next-button" type="button" aria-label="下一张照片">›</button>
+      </div>
+    </section>
+
+    <section class="section-block family-section">
+      <div class="section-heading centered-heading">
+        <p class="eyebrow">Family</p>
+        <h2>家庭成员介绍</h2>
+      </div>
+
+      <div class="family-photo-wrap">
+        <img class="family-photo" src="images/family.jpg" alt="61的家庭合照">
+
+        <!-- 妈妈点击区域：可调整 top / left / width / height 微调位置 -->
+        <button class="family-hotspot mother-hotspot" type="button" data-name="赵女士" data-role="妈妈" data-photo="images/mother.jpg" aria-label="查看妈妈介绍"></button>
+
+        <!-- 妹妹点击区域：可调整 top / left / width / height 微调位置 -->
+        <button class="family-hotspot sister-hotspot" type="button" data-name="妹妹" data-role="妹妹" data-photo="images/sister.jpg" aria-label="查看妹妹介绍"></button>
+
+        <!-- 奶奶点击区域：可调整 top / left / width / height 微调位置 -->
+        <button class="family-hotspot grandma-hotspot" type="button" data-name="奶奶" data-role="奶奶" data-photo="images/grandma.jpg" aria-label="查看奶奶介绍"></button>
+
+        <!-- 哥哥点击区域：可调整 top / left / width / height 微调位置 -->
+        <button class="family-hotspot brother-hotspot" type="button" data-name="哥哥" data-role="哥哥" data-photo="images/brother.jpg" aria-label="查看哥哥介绍"></button>
+
+        <!-- 爸爸点击区域：可调整 top / left / width / height 微调位置 -->
+        <button class="family-hotspot father-hotspot" type="button" data-name="刘先生" data-role="爸爸" data-photo="images/father.jpg" aria-label="查看爸爸介绍"></button>
+      </div>
+    </section>
+  </main>
+
+  <div class="family-modal" id="familyModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalName">
+      <button class="modal-close" type="button" data-close-modal aria-label="关闭弹窗">×</button>
+      <img id="modalPhoto" src="" alt="">
+      <h3 id="modalName"></h3>
+      <p id="modalRole"></p>
+    </article>
+  </div>
+
+  <div class="cat-modal" id="catModal" aria-hidden="true">
+    <div class="cat-backdrop" data-close-cat></div>
+    <article class="cat-modal-card" role="dialog" aria-modal="true" aria-labelledby="catModalTitle">
+      <button class="modal-close" type="button" data-close-cat aria-label="关闭小猫照片">×</button>
+      <p class="eyebrow">Baolan</p>
+      <h3 id="catModalTitle">小猫「宝蓝」</h3>
+      <div class="cat-carousel">
+        <button class="cat-carousel-button cat-prev-button" type="button" aria-label="上一张小猫照片">←</button>
+        <figure class="cat-photo-card">
+          <img id="catImage" src="images/cat/cat1.jpg" alt="小猫宝蓝照片 1">
+          <figcaption id="catCaption">1 / 4</figcaption>
+        </figure>
+        <button class="cat-carousel-button cat-next-button" type="button" aria-label="下一张小猫照片">→</button>
+      </div>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
